@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		5ED9DA891EB1FC5900F2AF84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DA881EB1FC5900F2AF84 /* main.m */; };
 		5ED9DA8C1EB1FC5900F2AF84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DA8B1EB1FC5900F2AF84 /* AppDelegate.m */; };
-		5ED9DA8F1EB1FC5900F2AF84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DA8E1EB1FC5900F2AF84 /* ViewController.m */; };
+		5ED9DA8F1EB1FC5900F2AF84 /* SBBaseCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DA8E1EB1FC5900F2AF84 /* SBBaseCollectionController.m */; };
 		5ED9DA921EB1FC5900F2AF84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED9DA901EB1FC5900F2AF84 /* Main.storyboard */; };
 		5ED9DA941EB1FC5900F2AF84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED9DA931EB1FC5900F2AF84 /* Assets.xcassets */; };
 		5ED9DA971EB1FC5900F2AF84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED9DA951EB1FC5900F2AF84 /* LaunchScreen.storyboard */; };
 		5ED9DAA21EB1FC5900F2AF84 /* SpringBackDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DAA11EB1FC5900F2AF84 /* SpringBackDemoTests.m */; };
 		5ED9DAAD1EB1FC5900F2AF84 /* SpringBackDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DAAC1EB1FC5900F2AF84 /* SpringBackDemoUITests.m */; };
 		5ED9DABC1EB1FCB800F2AF84 /* SpringBackFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9DABB1EB1FCB800F2AF84 /* SpringBackFlowLayout.m */; };
+		A302DF9D1EB384FA0078A87B /* SBRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DF9C1EB384FA0078A87B /* SBRootViewController.m */; };
+		A302DFA01EB385B10078A87B /* UIColor+SBGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DF9F1EB385B10078A87B /* UIColor+SBGenerator.m */; };
+		A302DFA31EB38A940078A87B /* SBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFA21EB38A940078A87B /* SBBaseViewController.m */; };
+		A302DFA61EB38B800078A87B /* SBClassifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFA51EB38B800078A87B /* SBClassifyController.m */; };
+		A302DFA91EB38C1E0078A87B /* SBClassifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFA81EB38C1E0078A87B /* SBClassifyModel.m */; };
+		A302DFAC1EB38DA50078A87B /* SBClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */; };
+		A302DFAF1EB391D70078A87B /* SBClassifyCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +47,8 @@
 		5ED9DA881EB1FC5900F2AF84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ED9DA8A1EB1FC5900F2AF84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5ED9DA8B1EB1FC5900F2AF84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5ED9DA8D1EB1FC5900F2AF84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5ED9DA8E1EB1FC5900F2AF84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5ED9DA8D1EB1FC5900F2AF84 /* SBBaseCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBaseCollectionController.h; sourceTree = "<group>"; };
+		5ED9DA8E1EB1FC5900F2AF84 /* SBBaseCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBaseCollectionController.m; sourceTree = "<group>"; };
 		5ED9DA911EB1FC5900F2AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5ED9DA931EB1FC5900F2AF84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ED9DA961EB1FC5900F2AF84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +61,20 @@
 		5ED9DAAE1EB1FC5900F2AF84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ED9DABA1EB1FCB800F2AF84 /* SpringBackFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpringBackFlowLayout.h; sourceTree = "<group>"; };
 		5ED9DABB1EB1FCB800F2AF84 /* SpringBackFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpringBackFlowLayout.m; sourceTree = "<group>"; };
+		A302DF9B1EB384FA0078A87B /* SBRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBRootViewController.h; sourceTree = "<group>"; };
+		A302DF9C1EB384FA0078A87B /* SBRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBRootViewController.m; sourceTree = "<group>"; };
+		A302DF9E1EB385B10078A87B /* UIColor+SBGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SBGenerator.h"; sourceTree = "<group>"; };
+		A302DF9F1EB385B10078A87B /* UIColor+SBGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SBGenerator.m"; sourceTree = "<group>"; };
+		A302DFA11EB38A940078A87B /* SBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBaseViewController.h; sourceTree = "<group>"; };
+		A302DFA21EB38A940078A87B /* SBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBaseViewController.m; sourceTree = "<group>"; };
+		A302DFA41EB38B800078A87B /* SBClassifyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBClassifyController.h; sourceTree = "<group>"; };
+		A302DFA51EB38B800078A87B /* SBClassifyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyController.m; sourceTree = "<group>"; };
+		A302DFA71EB38C1E0078A87B /* SBClassifyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBClassifyModel.h; sourceTree = "<group>"; };
+		A302DFA81EB38C1E0078A87B /* SBClassifyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyModel.m; sourceTree = "<group>"; };
+		A302DFAA1EB38DA50078A87B /* SBClassifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBClassifyCell.h; sourceTree = "<group>"; };
+		A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyCell.m; sourceTree = "<group>"; };
+		A302DFAD1EB391D70078A87B /* SBClassifyCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBClassifyCellLayout.h; sourceTree = "<group>"; };
+		A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyCellLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +127,8 @@
 			children = (
 				5ED9DA8A1EB1FC5900F2AF84 /* AppDelegate.h */,
 				5ED9DA8B1EB1FC5900F2AF84 /* AppDelegate.m */,
-				5ED9DA8D1EB1FC5900F2AF84 /* ViewController.h */,
-				5ED9DA8E1EB1FC5900F2AF84 /* ViewController.m */,
+				5ED9DA8D1EB1FC5900F2AF84 /* SBBaseCollectionController.h */,
+				5ED9DA8E1EB1FC5900F2AF84 /* SBBaseCollectionController.m */,
 				5ED9DA901EB1FC5900F2AF84 /* Main.storyboard */,
 				5ED9DA931EB1FC5900F2AF84 /* Assets.xcassets */,
 				5ED9DA951EB1FC5900F2AF84 /* LaunchScreen.storyboard */,
@@ -115,6 +136,20 @@
 				5ED9DA871EB1FC5900F2AF84 /* Supporting Files */,
 				5ED9DABA1EB1FCB800F2AF84 /* SpringBackFlowLayout.h */,
 				5ED9DABB1EB1FCB800F2AF84 /* SpringBackFlowLayout.m */,
+				A302DF9B1EB384FA0078A87B /* SBRootViewController.h */,
+				A302DF9C1EB384FA0078A87B /* SBRootViewController.m */,
+				A302DF9E1EB385B10078A87B /* UIColor+SBGenerator.h */,
+				A302DF9F1EB385B10078A87B /* UIColor+SBGenerator.m */,
+				A302DFA11EB38A940078A87B /* SBBaseViewController.h */,
+				A302DFA21EB38A940078A87B /* SBBaseViewController.m */,
+				A302DFA41EB38B800078A87B /* SBClassifyController.h */,
+				A302DFA51EB38B800078A87B /* SBClassifyController.m */,
+				A302DFA71EB38C1E0078A87B /* SBClassifyModel.h */,
+				A302DFA81EB38C1E0078A87B /* SBClassifyModel.m */,
+				A302DFAA1EB38DA50078A87B /* SBClassifyCell.h */,
+				A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */,
+				A302DFAD1EB391D70078A87B /* SBClassifyCellLayout.h */,
+				A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */,
 			);
 			path = SpringBackDemo;
 			sourceTree = "<group>";
@@ -278,9 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ED9DA8F1EB1FC5900F2AF84 /* ViewController.m in Sources */,
+				A302DFA61EB38B800078A87B /* SBClassifyController.m in Sources */,
+				A302DFAF1EB391D70078A87B /* SBClassifyCellLayout.m in Sources */,
+				A302DFA31EB38A940078A87B /* SBBaseViewController.m in Sources */,
+				5ED9DA8F1EB1FC5900F2AF84 /* SBBaseCollectionController.m in Sources */,
 				5ED9DA8C1EB1FC5900F2AF84 /* AppDelegate.m in Sources */,
+				A302DF9D1EB384FA0078A87B /* SBRootViewController.m in Sources */,
 				5ED9DA891EB1FC5900F2AF84 /* main.m in Sources */,
+				A302DFAC1EB38DA50078A87B /* SBClassifyCell.m in Sources */,
+				A302DFA91EB38C1E0078A87B /* SBClassifyModel.m in Sources */,
+				A302DFA01EB385B10078A87B /* UIColor+SBGenerator.m in Sources */,
 				5ED9DABC1EB1FCB800F2AF84 /* SpringBackFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +555,7 @@
 				5ED9DAB31EB1FC5900F2AF84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ED9DAB41EB1FC5900F2AF84 /* Build configuration list for PBXNativeTarget "SpringBackDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +564,7 @@
 				5ED9DAB61EB1FC5900F2AF84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5ED9DAB71EB1FC5900F2AF84 /* Build configuration list for PBXNativeTarget "SpringBackDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +573,7 @@
 				5ED9DAB91EB1FC5900F2AF84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

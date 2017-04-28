@@ -6,17 +6,17 @@
 //  Copyright © 2017年 YF. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SBBaseCollectionController.h"
 
 
 #define DemoCollectionViewKeyKey @"DemoCollectionViewKeyKey"
 
-@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface SBBaseCollectionController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) UICollectionView *demoCltView;
 @property(nonatomic, strong) UICollectionViewFlowLayout* demoFlowLayout;
 @end
 
-@implementation ViewController
+@implementation SBBaseCollectionController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

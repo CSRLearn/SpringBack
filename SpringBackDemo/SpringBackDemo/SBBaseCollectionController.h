@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface SBBaseCollectionController : SBBaseViewController
 
 
 @end
