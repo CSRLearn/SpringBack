@@ -23,6 +23,7 @@
 		A302DFA91EB38C1E0078A87B /* SBClassifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFA81EB38C1E0078A87B /* SBClassifyModel.m */; };
 		A302DFAC1EB38DA50078A87B /* SBClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */; };
 		A302DFAF1EB391D70078A87B /* SBClassifyCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */; };
+		A302DFB21EB62E980078A87B /* SBPinchLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFB11EB62E980078A87B /* SBPinchLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyCell.m; sourceTree = "<group>"; };
 		A302DFAD1EB391D70078A87B /* SBClassifyCellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBClassifyCellLayout.h; sourceTree = "<group>"; };
 		A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyCellLayout.m; sourceTree = "<group>"; };
+		A302DFB01EB62E980078A87B /* SBPinchLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPinchLayout.h; sourceTree = "<group>"; };
+		A302DFB11EB62E980078A87B /* SBPinchLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPinchLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				5ED9DA931EB1FC5900F2AF84 /* Assets.xcassets */,
 				5ED9DA951EB1FC5900F2AF84 /* LaunchScreen.storyboard */,
 				5ED9DA981EB1FC5900F2AF84 /* Info.plist */,
+				A302DFB01EB62E980078A87B /* SBPinchLayout.h */,
+				A302DFB11EB62E980078A87B /* SBPinchLayout.m */,
 				5ED9DA871EB1FC5900F2AF84 /* Supporting Files */,
 				5ED9DABA1EB1FCB800F2AF84 /* SpringBackFlowLayout.h */,
 				5ED9DABB1EB1FCB800F2AF84 /* SpringBackFlowLayout.m */,
@@ -247,6 +252,7 @@
 				TargetAttributes = {
 					5ED9DA831EB1FC5900F2AF84 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6JB66GJAV6;
 						ProvisioningStyle = Automatic;
 					};
 					5ED9DA9C1EB1FC5900F2AF84 = {
@@ -324,6 +330,7 @@
 				A302DFA91EB38C1E0078A87B /* SBClassifyModel.m in Sources */,
 				A302DFA01EB385B10078A87B /* UIColor+SBGenerator.m in Sources */,
 				5ED9DABC1EB1FCB800F2AF84 /* SpringBackFlowLayout.m in Sources */,
+				A302DFB21EB62E980078A87B /* SBPinchLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JB66GJAV6;
 				INFOPLIST_FILE = SpringBackDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyf.SpringBackDemo;
@@ -483,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6JB66GJAV6;
 				INFOPLIST_FILE = SpringBackDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yyf.SpringBackDemo;

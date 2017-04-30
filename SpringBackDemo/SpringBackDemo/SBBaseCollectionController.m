@@ -7,6 +7,7 @@
 //
 
 #import "SBBaseCollectionController.h"
+#import "SBPinchLayout.h"
 
 
 #define DemoCollectionViewKeyKey @"DemoCollectionViewKeyKey"
@@ -14,6 +15,7 @@
 @interface SBBaseCollectionController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) UICollectionView *demoCltView;
 @property(nonatomic, strong) UICollectionViewFlowLayout* demoFlowLayout;
+@property(nonatomic, assign) CGPoint originCellCenter;
 @end
 
 @implementation SBBaseCollectionController
@@ -24,11 +26,22 @@
     
     [self.view addSubview:self.demoCltView];
     
+    UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(handlePinchGesture:)];
+    
+    [self.view addGestureRecognizer:pinchGesture];
+    
 }
 -(UICollectionViewFlowLayout *)demoFlowLayout{
     
+//    if (_demoFlowLayout == nil) {
+//        _demoFlowLayout = [[UICollectionViewFlowLayout alloc]init];
+//        _demoFlowLayout.itemSize = CGSizeMake(60.f, 60.0f);
+//        _demoFlowLayout.minimumLineSpacing = 10.0f;
+//        _demoFlowLayout.minimumInteritemSpacing = 12.0f;
+//        _demoFlowLayout.sectionInset = UIEdgeInsetsMake(10.0f, 15.0f, 10.0f, 15.0f);
+//    }
     if (_demoFlowLayout == nil) {
-        _demoFlowLayout = [[UICollectionViewFlowLayout alloc]init];
+        _demoFlowLayout = [[SBPinchLayout alloc]init];
         _demoFlowLayout.itemSize = CGSizeMake(60.f, 60.0f);
         _demoFlowLayout.minimumLineSpacing = 10.0f;
         _demoFlowLayout.minimumInteritemSpacing = 12.0f;
@@ -94,7 +107,28 @@
     return curCell;
     
 }
-
+-(void)handlePinchGesture:(UIPinchGestureRecognizer *) sender{
+    
+    SBPinchLayout *pinchLayout = (SBPinchLayout *)self.demoCltView.collectionViewLayout;
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        CGPoint initialPinchPoint = [sender locationInView:self.demoCltView];
+        NSIndexPath *pinchedCellPath = [self.demoCltView indexPathForItemAtPoint:initialPinchPoint];
+        UICollectionViewCell *curCell =  [self.demoCltView cellForItemAtIndexPath:pinchedCellPath];
+        self.originCellCenter = curCell.center;
+        pinchLayout.pinchedCellPath = pinchedCellPath;
+    }
+    
+    if (sender.state == UIGestureRecognizerStateChanged) {
+        pinchLayout.pinchedCellScale = sender.scale;
+        pinchLayout.pinchedCellCenter = [sender locationInView:self.demoCltView];
+    }
+    
+    if (sender.state == UIGestureRecognizerStateEnded) {
+        pinchLayout.pinchedCellCenter = self.originCellCenter;
+        pinchLayout.pinchedCellScale = 1.0f;
+    }
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
