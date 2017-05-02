@@ -8,7 +8,7 @@
 
 #import "SBBaseCollectionController.h"
 #import "SBPinchLayout.h"
-
+#import "SBLineLayout.h"
 
 #define DemoCollectionViewKeyKey @"DemoCollectionViewKeyKey"
 
@@ -40,12 +40,18 @@
 //        _demoFlowLayout.minimumInteritemSpacing = 12.0f;
 //        _demoFlowLayout.sectionInset = UIEdgeInsetsMake(10.0f, 15.0f, 10.0f, 15.0f);
 //    }
+//    if (_demoFlowLayout == nil) {
+//        _demoFlowLayout = [[SBPinchLayout alloc]init];
+//        _demoFlowLayout.itemSize = CGSizeMake(60.f, 60.0f);
+//        _demoFlowLayout.minimumLineSpacing = 10.0f;
+//        _demoFlowLayout.minimumInteritemSpacing = 12.0f;
+//        _demoFlowLayout.sectionInset = UIEdgeInsetsMake(10.0f, 15.0f, 10.0f, 15.0f);
+//    }
+//    return _demoFlowLayout;
+    
     if (_demoFlowLayout == nil) {
-        _demoFlowLayout = [[SBPinchLayout alloc]init];
-        _demoFlowLayout.itemSize = CGSizeMake(60.f, 60.0f);
-        _demoFlowLayout.minimumLineSpacing = 10.0f;
-        _demoFlowLayout.minimumInteritemSpacing = 12.0f;
-        _demoFlowLayout.sectionInset = UIEdgeInsetsMake(10.0f, 15.0f, 10.0f, 15.0f);
+        _demoFlowLayout = [[SBLineLayout alloc]init];
+
     }
     return _demoFlowLayout;
 }

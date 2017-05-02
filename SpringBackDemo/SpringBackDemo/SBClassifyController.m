@@ -11,7 +11,7 @@
 #import "SBClassifyCell.h"
 #import "SBClassifyCellLayout.h"
 #import "SBBaseCollectionController.h"
-
+#import "SBCircleController.h"
 
 @interface SBClassifyController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) UITableView *clsListTableView;
@@ -32,6 +32,12 @@
         basicMole.clsDescription = @"CollectionView Prototype";
         
         [_clsMutDataArray addObject:basicMole];
+        
+        SBClassifyModel *circleMole = [[SBClassifyModel alloc]init];
+        circleMole.clsTitle = @"Circle CollectionView";
+        circleMole.clsDescription = @"CollectionView animation";
+        
+        [_clsMutDataArray addObject:circleMole];
     }
     
     return _clsMutDataArray;
@@ -119,9 +125,26 @@
     
     SBClassifyModel *curModel = [self.clsMutDataArray objectAtIndex:indexPath.row];
     
-    SBBaseCollectionController *baseClsCtr = [[SBBaseCollectionController alloc]init];
-    baseClsCtr.title = curModel.clsTitle;
-    [self.navigationController pushViewController:baseClsCtr animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            SBBaseCollectionController *baseClsCtr = [[SBBaseCollectionController alloc]init];
+            baseClsCtr.title = curModel.clsTitle;
+            [self.navigationController pushViewController:baseClsCtr animated:YES];
+        }
+            break;
+            
+        case 1:
+        {
+            SBCircleController *circleClsCtr = [[SBCircleController alloc]init];
+            circleClsCtr.title = curModel.clsTitle;
+            [self.navigationController pushViewController:circleClsCtr animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

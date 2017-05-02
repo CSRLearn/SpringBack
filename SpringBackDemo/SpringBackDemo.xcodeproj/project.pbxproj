@@ -24,6 +24,9 @@
 		A302DFAC1EB38DA50078A87B /* SBClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */; };
 		A302DFAF1EB391D70078A87B /* SBClassifyCellLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */; };
 		A302DFB21EB62E980078A87B /* SBPinchLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFB11EB62E980078A87B /* SBPinchLayout.m */; };
+		A302DFB51EB6C3010078A87B /* SBLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFB41EB6C3010078A87B /* SBLineLayout.m */; };
+		A302DFB81EB6D6A90078A87B /* SBCircleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFB71EB6D6A90078A87B /* SBCircleController.m */; };
+		A302DFBB1EB6DD240078A87B /* SBCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A302DFBA1EB6DD240078A87B /* SBCircleLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,12 @@
 		A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBClassifyCellLayout.m; sourceTree = "<group>"; };
 		A302DFB01EB62E980078A87B /* SBPinchLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPinchLayout.h; sourceTree = "<group>"; };
 		A302DFB11EB62E980078A87B /* SBPinchLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPinchLayout.m; sourceTree = "<group>"; };
+		A302DFB31EB6C3010078A87B /* SBLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBLineLayout.h; sourceTree = "<group>"; };
+		A302DFB41EB6C3010078A87B /* SBLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBLineLayout.m; sourceTree = "<group>"; };
+		A302DFB61EB6D6A90078A87B /* SBCircleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCircleController.h; sourceTree = "<group>"; };
+		A302DFB71EB6D6A90078A87B /* SBCircleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCircleController.m; sourceTree = "<group>"; };
+		A302DFB91EB6DD240078A87B /* SBCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCircleLayout.h; sourceTree = "<group>"; };
+		A302DFBA1EB6DD240078A87B /* SBCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCircleLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +164,12 @@
 				A302DFAB1EB38DA50078A87B /* SBClassifyCell.m */,
 				A302DFAD1EB391D70078A87B /* SBClassifyCellLayout.h */,
 				A302DFAE1EB391D70078A87B /* SBClassifyCellLayout.m */,
+				A302DFB31EB6C3010078A87B /* SBLineLayout.h */,
+				A302DFB41EB6C3010078A87B /* SBLineLayout.m */,
+				A302DFB61EB6D6A90078A87B /* SBCircleController.h */,
+				A302DFB71EB6D6A90078A87B /* SBCircleController.m */,
+				A302DFB91EB6DD240078A87B /* SBCircleLayout.h */,
+				A302DFBA1EB6DD240078A87B /* SBCircleLayout.m */,
 			);
 			path = SpringBackDemo;
 			sourceTree = "<group>";
@@ -321,6 +336,7 @@
 			files = (
 				A302DFA61EB38B800078A87B /* SBClassifyController.m in Sources */,
 				A302DFAF1EB391D70078A87B /* SBClassifyCellLayout.m in Sources */,
+				A302DFB81EB6D6A90078A87B /* SBCircleController.m in Sources */,
 				A302DFA31EB38A940078A87B /* SBBaseViewController.m in Sources */,
 				5ED9DA8F1EB1FC5900F2AF84 /* SBBaseCollectionController.m in Sources */,
 				5ED9DA8C1EB1FC5900F2AF84 /* AppDelegate.m in Sources */,
@@ -329,7 +345,9 @@
 				A302DFAC1EB38DA50078A87B /* SBClassifyCell.m in Sources */,
 				A302DFA91EB38C1E0078A87B /* SBClassifyModel.m in Sources */,
 				A302DFA01EB385B10078A87B /* UIColor+SBGenerator.m in Sources */,
+				A302DFBB1EB6DD240078A87B /* SBCircleLayout.m in Sources */,
 				5ED9DABC1EB1FCB800F2AF84 /* SpringBackFlowLayout.m in Sources */,
+				A302DFB51EB6C3010078A87B /* SBLineLayout.m in Sources */,
 				A302DFB21EB62E980078A87B /* SBPinchLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
